@@ -1,7 +1,7 @@
 # IAM Basics Lab - Solution
 
-**Student Name:** [Your Name]  
-**Date Completed:** [Date]
+**Student Name:** Cielo Escobar 
+**Date Completed:** 03/02/26
 
 ---
 
@@ -166,7 +166,7 @@
 ![Access Analyzer](screenshots/access-analyzer.png)
 
 **Findings:**
-- Number of findings: [X]
+- Number of findings: 0
 - Critical issues: [List any public access found]
 - Recommendations: [Your notes]
 
@@ -242,18 +242,18 @@ $ aws s3 ls --profile alice
 
 ## Checklist
 
-- [ ] All 3 users created (alice, bob, charlie)
-- [ ] Both groups created (Developers, DevOps)
-- [ ] Permissions tested for each user
-- [ ] Custom policy created and tested
-- [ ] MFA enabled for at least one user
-- [ ] All screenshots captured
-- [ ] All reflection questions answered
-- [ ] Policy JSON file saved
-- [ ] Work committed to Git
-- [ ] Pull request created
+- [x] All 3 users created (alice, bob, charlie)
+- [x] Both groups created (Developers, DevOps)
+- [x] Permissions tested for each user
+- [x] Custom policy created and tested
+- [x] MFA enabled for at least one user
+- [x] All screenshots captured
+- [x] All reflection questions answered
+- [x] Policy JSON file saved
+- [x] Work committed to Git
+- [x] Pull request created
 
 ---
 
-**Completed By:** [Your Name]  
-**Date:** [Date]
+**Completed By:** Cielo Escobar
+**Date:** 03/02/26
