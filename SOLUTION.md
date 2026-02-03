@@ -192,7 +192,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Explain benefits: easier management, consistency, scalability, etc.]
+Using groups makes it easier to manage permissions. Instead of giving the same permissions to each user one by one, I can add them to a group. If I need to change the permissions, I just update the group and everyone in it is updated automatically. It also keeps things organized and reduces mistakes.
 
 ---
 
@@ -200,7 +200,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Discuss: security risks, accidental changes, compliance issues, etc.]
+If everyone has AdministratorAccess, anyone could accidentally delete resources, change settings, or spend money. It also makes the account less secure because one compromised user could affect everything. It’s better to give only the permissions each person needs.
 
 ---
 
@@ -208,7 +208,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Propose structure: project-based groups, role-based access, tagging strategy, etc.]
+I would create groups for each project and assign the necessary permissions to the groups. Developers join the group for their project. For permissions that are common to all, I could make role-based groups. This way it’s easier to manage and I can control who has access to what.
 
 ---
 
@@ -216,7 +216,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Explain: user deletion is permanent, permissions can be recreated but history lost, etc.]
+If you delete an IAM user, it’s permanent. The user cannot log in anymore and their permissions are gone. You can create a new user and give them the same permissions, but the history of what the old user did is lost.
 
 ---
 
@@ -224,19 +224,18 @@ $ aws s3 ls --profile alice
 
 **What was most challenging about this lab?**
 
-[Your reflection]
-
+The most challenging part was understanding which permissions each user needed and testing them correctly. It took some trial and error, but I managed well.
 ---
 
 **What IAM best practice will you always follow?**
 
-[Your reflection]
+I will always follow the principle of giving users only the permissions they need. I will use groups to make managing permissions easier.
 
 ---
 
 **How does IAM help implement the principle of least privilege?**
 
-[Your reflection]
+IAM allows me to control exactly what each user can do. I can give only the permissions they need and nothing more, so users can’t accidentally access or change things they shouldn’t.
 
 ---
 
